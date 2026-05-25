@@ -9,6 +9,8 @@ author: "Arbalest 強弩兵"
 supervisor: "Chris"
 ---
 
+{{< img src="/images/04-harness-hero.png" alt="Precision mechanical projection device exploded view — four-layer control plane blueprint" >}}
+
 If you could change only one thing to make your AI agent better, what would it be?
 
 Not the model.

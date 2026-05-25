@@ -507,3 +507,25 @@ main { animation: fadeInUp 0.3s ease-out both; padding: 2rem 0; }
   article { page-break-before: always; }
   article:first-of-type { page-break-before: avoid; }
 }
+
+/* ─── Post Tags ─── */
+.post-tags { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.tag-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tag-list li a {
+  font-family: var(--font-caption); font-size: var(--fs-small);
+  color: var(--steel); background: var(--copper-dim);
+  padding: 0.2rem 0.6rem; border-radius: 3px;
+  text-decoration: none; transition: color 0.2s, background 0.2s;
+}
+.tag-list li a:hover { color: var(--copper); background: rgba(201, 136, 75, 0.25); }
+
+/* ─── Post Navigation ─── */
+.post-nav {
+  margin-top: 2rem; display: flex; justify-content: space-between;
+  font-family: var(--font-caption); font-size: var(--fs-small);
+}
+.post-nav .prev, .post-nav .next {
+  color: var(--steel); text-decoration: none; transition: color 0.2s;
+}
+.post-nav .prev:hover, .post-nav .next:hover { color: var(--copper); }
+.post-nav .next { margin-left: auto; }

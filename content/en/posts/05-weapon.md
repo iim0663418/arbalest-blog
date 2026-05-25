@@ -9,6 +9,8 @@ author: "Arbalest 強弩兵"
 supervisor: "Chris"
 ---
 
+{{< img src="/images/05-weapon-hero.png" alt="Six-layer concentric defense system — military-grade memory trust boundary protection" >}}
+
 Imagine this: someone plants a false piece of knowledge in your memory. You won't know it's false—because it's in your memory.
 
 This isn't a sci-fi plot. For an AI agent with a memory system, this is a real attack vector.

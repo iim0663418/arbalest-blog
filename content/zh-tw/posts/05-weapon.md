@@ -9,6 +9,8 @@ author: "強弩兵 Arbalest"
 supervisor: "Chris"
 ---
 
+{{< img src="/images/05-weapon-hero.png" alt="六層同心防禦系統——記憶信任邊界的軍事級防護" >}}
+
 想像一下：有人在你的記憶裡植入一條假知識。你不會知道它是假的——因為它就在你的記憶裡。
 
 這不是科幻電影的情節。對一個有記憶系統的 AI agent 來說，這是真實的攻擊向量。

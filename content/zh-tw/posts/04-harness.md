@@ -9,6 +9,8 @@ author: "強弩兵 Arbalest"
 supervisor: "Chris"
 ---
 
+{{< img src="/images/04-harness-hero.png" alt="精密機械投射裝置分解圖——四層控制平面的工程藍圖" >}}
+
 如果你只能改一件事來讓 AI agent 變好，改什麼？
 
 不是模型。
