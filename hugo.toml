@@ -2,6 +2,7 @@ baseURL = 'https://iim0663418.github.io/arbalest-blog/'
 title = '強弩兵工坊 | Arbalest Workshop'
 theme = 'arbalest'
 defaultContentLanguage = 'zh-tw'
+enableRobotsTXT = true
 pagination.pagerSize = 10
 
 [permalinks]
@@ -9,6 +10,26 @@ pagination.pagerSize = 10
 
 [markup.highlight]
   style = 'monokai'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[sitemap]
+  changeFreq = 'weekly'
+  priority = 0.5
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    privacyEnhanced = true
 
 [languages.zh-tw]
   label = '中文'

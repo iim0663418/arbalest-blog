@@ -1,6 +1,10 @@
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="bolt-separator"></div>
-    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+    <p>
+      &copy; {{ now.Year }} {{ .Site.Title }}
+      · <a href="{{ "index.xml" | relLangURL }}">RSS</a>
+      · <a href="https://github.com/iim0663418/arbalest-blog" target="_blank" rel="noopener">GitHub</a>
+    </p>
   </div>
 </footer>

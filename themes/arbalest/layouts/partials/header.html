@@ -1,13 +1,23 @@
-<header class="site-header">
-  <nav class="container nav-bar">
-    <a href="{{ "/" | relLangURL }}" class="site-title">{{ .Site.Title }}</a>
-    <div class="lang-switch">
-      {{ if .IsTranslated }}
-        {{ range .Translations }}
-        <a href="{{ .RelPermalink }}" class="lang-link">{{ .Language.Lang }}</a>
-        {{ end }}
+<header class="site-header" role="banner">
+  <nav class="container nav-bar" aria-label="Main navigation">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-title">{{ .Site.Title }}</a>
+    <div class="nav-links">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       {{ end }}
-      <a href="{{ .RelPermalink }}" class="lang-link active">{{ .Language.Lang }}</a>
+      <span class="lang-switch">
+        {{ if .IsTranslated }}
+          {{ range .Translations }}
+          <a href="{{ .RelPermalink }}" class="lang-link" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
+          {{ end }}
+        {{ else }}
+          {{/* Fallback: link to home of other languages */}}
+          {{ $current := .Language.Lang }}
+          {{ range .Site.Home.Translations }}
+          <a href="{{ .RelPermalink }}" class="lang-link" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
+          {{ end }}
+        {{ end }}
+      </span>
     </div>
   </nav>
 </header>

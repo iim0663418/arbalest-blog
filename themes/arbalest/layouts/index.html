@@ -1,12 +1,26 @@
 {{ define "main" }}
 <section class="homepage">
-  <h1 class="page-title">{{ .Site.Title }}</h1>
+  <header class="hero">
+    <h1 class="page-title">{{ .Site.Title }}</h1>
+    <p class="site-description">{{ .Site.Params.description }}</p>
+  </header>
   <div class="bolt-separator"></div>
-  {{ range first 10 .Site.RegularPages }}
-  <article class="post-item">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </article>
-  {{ end }}
+
+  <section class="latest-posts" aria-label="Latest posts">
+    <h2>Latest Posts</h2>
+    {{ range first 5 .Site.RegularPages }}
+    <article class="post-item">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Summary }}<p class="post-summary">{{ . | plainify | truncate 120 }}</p>{{ end }}
+    </article>
+    {{ end }}
+    <a href="{{ "posts/" | relLangURL }}" class="view-all">View all posts →</a>
+  </section>
+
+  <section class="about-blurb" aria-label="About">
+    <h2>About</h2>
+    <p>{{ .Site.Params.description }}</p>
+  </section>
 </section>
 {{ end }}
