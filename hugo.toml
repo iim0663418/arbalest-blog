@@ -1,4 +1,4 @@
-baseURL = 'https://iim0663418.github.io/arbalest-blog/'
+baseURL = 'https://blog.sfan-tech.com/'
 title = '強弩兵工坊 | Arbalest Workshop'
 theme = 'arbalest'
 defaultContentLanguage = 'zh-tw'
