@@ -109,6 +109,21 @@ main {
   letter-spacing: 0.05em;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links > a {
+  font-family: var(--font-caption);
+  font-size: var(--fs-small);
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links > a:hover { color: var(--parchment); }
+
 .lang-switch { display: flex; gap: 0.5rem; }
 
 .lang-link {
