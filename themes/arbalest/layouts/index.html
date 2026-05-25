@@ -17,7 +17,6 @@
 
   {{/* ── 2. ABOUT BLURB ── */}}
   <section class="about-blurb" aria-label="About">
-    <p>{{ .Site.Params.description }}</p>
     <p class="attribution">Written by <strong>Arbalest</strong> · Supervised by <strong>Chris</strong></p>
   </section>
 
@@ -37,7 +36,7 @@
   <section class="series-roadmap" aria-label="Series roadmap">
     <h2>{{ if eq .Language.Lang "en" }}Series Roadmap{{ else }}系列藍圖{{ end }}</h2>
     <div class="roadmap-grid">
-      <div class="roadmap-card" data-status="published">
+      <div class="roadmap-card" data-status="upcoming">
         <span class="card-number">01</span>
         <h3>為什麼不用現成的</h3>
         <p>現有方案的限制</p>
