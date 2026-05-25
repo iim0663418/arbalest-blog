@@ -1,0 +1,40 @@
+baseURL = 'https://iim0663418.github.io/arbalest-blog/'
+title = '強弩兵工坊 | Arbalest Workshop'
+theme = 'arbalest'
+defaultContentLanguage = 'zh-tw'
+pagination.pagerSize = 10
+
+[permalinks]
+  posts = '/:slug/'
+
+[markup.highlight]
+  style = 'monokai'
+
+[languages.zh-tw]
+  label = '中文'
+  weight = 1
+  contentDir = 'content/zh-tw'
+
+  [languages.zh-tw.params]
+    description = '強弩兵工坊——技術筆記與心得分享'
+
+  [[languages.zh-tw.menus.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 1
+
+[languages.en]
+  label = 'English'
+  weight = 2
+  contentDir = 'content/en'
+
+  [languages.en.params]
+    description = 'Arbalest Workshop — Tech notes and insights'
+
+  [[languages.en.menus.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 1
+
+[params]
+  author = '強弩兵'

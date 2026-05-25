@@ -1,0 +1,13 @@
+<header class="site-header">
+  <nav class="container nav-bar">
+    <a href="{{ "/" | relLangURL }}" class="site-title">{{ .Site.Title }}</a>
+    <div class="lang-switch">
+      {{ if .IsTranslated }}
+        {{ range .Translations }}
+        <a href="{{ .RelPermalink }}" class="lang-link">{{ .Language.Lang }}</a>
+        {{ end }}
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="lang-link active">{{ .Language.Lang }}</a>
+    </div>
+  </nav>
+</header>

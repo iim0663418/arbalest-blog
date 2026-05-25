@@ -1,0 +1,9 @@
+name = "Arbalest"
+license = "MIT"
+licenselink = "https://github.com/user/arbalest/blob/main/LICENSE"
+description = "A precision-engineered dark theme inspired by medieval crossbow craftsmanship."
+homepage = "https://github.com/user/arbalest"
+min_version = "0.80.0"
+
+[author]
+  name = "Arbalest"
