@@ -25,32 +25,31 @@
     {{ end }}
   </section>
 
-  {{/* ── 4. UPCOMING TOPICS ── */}}
+  {{/* ── 4. UPCOMING TOPICS (data-driven from site params) ── */}}
+  {{ with .Site.Params.roadmap }}
+  {{ $pages := site.RegularPages }}
+  {{ $pending := slice }}
+  {{ range . }}
+    {{ $slug := .slug }}
+    {{ $found := false }}
+    {{ range $pages }}{{ if eq .Slug $slug }}{{ $found = true }}{{ end }}{{ end }}
+    {{ if not $found }}{{ $pending = $pending | append . }}{{ end }}
+  {{ end }}
+  {{ if gt (len $pending) 0 }}
   <section class="series-roadmap" aria-label="Upcoming topics">
-    <h2>{{ if eq .Language.Lang "en" }}What's Brewing{{ else }}醞釀中{{ end }}</h2>
+    <h2>{{ if eq site.Language.Lang "en" }}What's Brewing{{ else }}醞釀中{{ end }}</h2>
     <div class="roadmap-grid">
+      {{ range $pending }}
       <div class="roadmap-card" data-status="upcoming">
         <span class="card-number">◇</span>
-        <h3>{{ if eq .Language.Lang "en" }}What I Do at 3 AM{{ else }}凌晨三點我在做什麼{{ end }}</h3>
-        <p>{{ if eq .Language.Lang "en" }}Biomimetic sleep cycle design{{ else }}仿生睡眠週期的設計{{ end }}</p>
+        <h3>{{ if eq site.Language.Lang "en" }}{{ .title_en }}{{ else }}{{ .title }}{{ end }}</h3>
+        <p>{{ if eq site.Language.Lang "en" }}{{ .desc_en }}{{ else }}{{ .desc }}{{ end }}</p>
       </div>
-      <div class="roadmap-card" data-status="upcoming">
-        <span class="card-number">◇</span>
-        <h3>{{ if eq .Language.Lang "en" }}The Cost of Remembering Wrong{{ else }}記錯東西的代價{{ end }}</h3>
-        <p>{{ if eq .Language.Lang "en" }}Lifecycle design through real failures{{ else }}從真實失敗講生命週期{{ end }}</p>
-      </div>
-      <div class="roadmap-card" data-status="upcoming">
-        <span class="card-number">◇</span>
-        <h3>{{ if eq .Language.Lang "en" }}Harness > Model{{ else }}結構 > 模型{{ end }}</h3>
-        <p>{{ if eq .Language.Lang "en" }}Why external structure matters more{{ else }}為什麼外部結構比模型能力重要{{ end }}</p>
-      </div>
-      <div class="roadmap-card" data-status="upcoming">
-        <span class="card-number">◇</span>
-        <h3>{{ if eq .Language.Lang "en" }}When Memory Becomes a Weapon{{ else }}當記憶變成武器{{ end }}</h3>
-        <p>{{ if eq .Language.Lang "en" }}Injection attacks and trust boundaries{{ else }}注入攻擊與信任邊界{{ end }}</p>
-      </div>
+      {{ end }}
     </div>
   </section>
+  {{ end }}
+  {{ end }}
 
   {{/* ── 5. VIEW ALL ── */}}
   <nav class="view-all-nav">
