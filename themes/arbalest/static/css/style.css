@@ -368,10 +368,9 @@ main { animation: fadeInUp 0.3s ease-out both; padding: 2rem 0; }
 
 /* ─── Homepage Hero ─── */
 .hero { text-align: center; padding: 2rem 0 1rem; }
-.hero-ascii {
-  font-family: var(--font-heading); font-size: clamp(0.6rem, 0.5rem + 0.5vw, 0.8rem);
-  color: var(--copper); line-height: 1.4; margin-bottom: 1.5rem;
-  opacity: 0.8;
+.hero-image {
+  width: 100%; max-width: 720px; height: auto; margin-bottom: 1.5rem;
+  opacity: 0.9; border-radius: 4px;
 }
 .hero .site-title {
   font-family: var(--font-display); font-size: clamp(1.6rem, 1.4rem + 1.2vw, 2.4rem);

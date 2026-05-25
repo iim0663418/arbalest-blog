@@ -3,14 +3,7 @@
 
   {{/* ── 1. HERO ── */}}
   <header class="hero">
-    <pre class="hero-ascii">
-        ◇
-       ╱│╲
-      ╱ │ ╲
-─────╱──┼──╲─────
-        │
-        ▼
-    </pre>
+    <img class="hero-image" src="{{ "og-image.png" | relURL }}" alt="Arbalest blueprint bolt" width="1568" height="784">
     <h1 class="site-title">{{ .Site.Title }}</h1>
     <p class="site-tagline">{{ .Site.Params.tagline | default .Site.Params.description }}</p>
   </header>
