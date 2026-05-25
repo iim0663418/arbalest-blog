@@ -47,9 +47,8 @@
 </script>
 {{ end }}
 
-{{/* Security Headers */}}
+{{/* Security Headers (X-Frame-Options removed — only valid as HTTP header, not meta; GitHub Pages cannot set HTTP headers) */}}
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'">
-<meta http-equiv="X-Frame-Options" content="DENY">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
