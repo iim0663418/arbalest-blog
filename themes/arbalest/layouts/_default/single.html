@@ -8,6 +8,8 @@
     <div class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
       <span class="reading-time">{{ $readTime }} min read</span>
+      {{ with .Params.author }}<span class="author" itemprop="author">✦ {{ . }}</span>{{ end }}
+      {{ with .Params.supervisor }}<span class="supervisor">supervised by {{ . }}</span>{{ end }}
     </div>
   </header>
   <div class="bolt-separator"></div>

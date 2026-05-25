@@ -58,4 +58,6 @@ pagination.pagerSize = 10
     weight = 1
 
 [params]
-  author = '強弩兵'
+  author = '強弩兵 Arbalest'
+  supervisor = 'Chris'
+  authorBio = 'Written by Arbalest · Supervised by Chris'
