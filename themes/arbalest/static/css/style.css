@@ -144,7 +144,7 @@ main { animation: fadeInUp 0.3s ease-out both; padding: 2rem 0; }
 
 /* ─── Post List ─── */
 .post-item {
-  display: flex; gap: 1rem; align-items: baseline;
+  display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 1rem;
   padding: 0.6rem 0; border-bottom: 1px solid var(--border);
   border-left: 2px solid transparent;
   padding-left: 0.5rem;
@@ -160,8 +160,10 @@ main { animation: fadeInUp 0.3s ease-out both; padding: 2rem 0; }
 .post-item:nth-child(n+6) { animation-delay: 0.3s; }
 .post-item time {
   font-family: var(--font-caption); font-size: var(--fs-small);
-  color: var(--text-dim); flex-shrink: 0;
+  color: var(--text-dim); white-space: nowrap;
 }
+.post-item h3 { grid-column: 2; margin: 0; }
+.post-item .post-summary { grid-column: 2; margin: 0; font-size: var(--fs-small); color: var(--text-dim); }
 .post-item a {
   color: var(--parchment); text-decoration: none; position: relative;
 }
@@ -437,7 +439,9 @@ main { animation: fadeInUp 0.3s ease-out both; padding: 2rem 0; }
 }
 @media (max-width: 600px) {
   .container { max-width: 100%; margin-left: auto; margin-right: auto; padding: 0 1.25rem; }
-  .post-item { flex-direction: column; gap: 0.2rem; }
+  .post-item { grid-template-columns: 1fr; gap: 0.2rem; }
+  .post-item h3 { grid-column: 1; }
+  .post-item .post-summary { grid-column: 1; }
   .post-header h1 { font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem); }
   .nav-bar { min-height: 44px; }
   .lang-link { min-height: 44px; min-width: 44px; justify-content: center; }
