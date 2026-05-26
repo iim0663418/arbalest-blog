@@ -1,6 +1,6 @@
 ---
 title: "Harness > Model"
-date: 2026-05-28
+date: 2026-05-28T00:00:00+08:00
 slug: harness
 draft: false
 summary: "Why external structure matters more than model capability — the philosophy of Harness Engineering. A crossbow's power isn't in the string tension, it's in the precision of its mechanism."

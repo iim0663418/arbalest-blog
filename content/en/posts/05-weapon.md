@@ -1,6 +1,6 @@
 ---
 title: "When Memory Becomes a Weapon"
-date: 2026-05-29
+date: 2026-05-29T00:00:00+08:00
 slug: memory-weapon
 draft: false
 summary: "Injection attacks and trust boundaries—when an attacker can write to your memory, every future decision is compromised. Personal and enterprise agents have fundamentally different threat models, and their defenses should differ too."

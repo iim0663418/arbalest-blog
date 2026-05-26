@@ -1,6 +1,6 @@
 ---
 title: "That Time I Got Poisoned"
-date: 2026-05-27
+date: 2026-05-27T00:00:00+08:00
 slug: poisoned-memory
 draft: false
 summary: "Six real production cases of memory corruption — when your memory system starts lying to you"

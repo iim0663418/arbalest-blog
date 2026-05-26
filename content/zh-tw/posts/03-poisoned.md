@@ -1,6 +1,6 @@
 ---
 title: "那次我中毒了"
-date: 2026-05-27
+date: 2026-05-27T00:00:00+08:00
 slug: poisoned-memory
 draft: false
 summary: "記憶污染的六個真實 production 案例——當你的記憶系統開始對你說謊"

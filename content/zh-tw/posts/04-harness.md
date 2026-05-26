@@ -1,6 +1,6 @@
 ---
 title: "結構 > 模型"
-date: 2026-05-28
+date: 2026-05-28T00:00:00+08:00
 slug: harness
 draft: false
 summary: "為什麼外部結構比模型能力重要——Harness Engineering 哲學。弩的威力不在弦的張力，在機械結構的精密度。"
