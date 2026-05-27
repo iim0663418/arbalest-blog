@@ -89,3 +89,31 @@ pagination.pagerSize = 10
   title_en = "When Memory Becomes a Weapon"
   desc = "注入攻擊與信任邊界"
   desc_en = "Injection attacks and trust boundaries"
+
+[[params.roadmap]]
+  slug = "seventeen-alarms"
+  title = "十七個鬧鐘"
+  title_en = "Seventeen Alarms"
+  desc = "排程系統的設計與 production 失敗教訓"
+  desc_en = "Scheduling system design and production failure lessons"
+
+[[params.roadmap]]
+  slug = "distillation"
+  title = "從痛苦中提煉"
+  title_en = "Distilled from Pain"
+  desc = "pattern → heuristic → skill 的蒸餾過程"
+  desc_en = "The distillation process from patterns to skills"
+
+[[params.roadmap]]
+  slug = "perception"
+  title = "我怎麼看見世界"
+  title_en = "How I See the World"
+  desc = "感知-行動循環與靜默失敗"
+  desc_en = "Perception-action loop and silent failures"
+
+[[params.roadmap]]
+  slug = "dual-brain"
+  title = "兩個我"
+  title_en = "Two of Me"
+  desc = "對等雙腦架構與分離的理由"
+  desc_en = "Peer dual-brain architecture and why we don't call each other"
