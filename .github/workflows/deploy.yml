@@ -5,6 +5,7 @@ on:
     branches: [main]
   schedule:
     - cron: '0 1 * * *'  # UTC 01:00 = 台北 09:00，每日自動發布到期文章
+  workflow_dispatch:
 
 permissions:
   contents: read
